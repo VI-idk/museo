@@ -1,0 +1,273 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+
+body{
+    font-family:'Montserrat',sans-serif;
+    background:#f4efe6;
+    color:#2d2d2d;
+}
+
+h1,h2,h3{
+    font-family:'Cinzel',serif;
+}
+
+section{
+    padding:100px 10%;
+}
+.comision h2,
+h2{
+    font-size:2.5rem;
+    margin-bottom:30px;
+    text-align: center  ;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+    color:white;
+    background:
+    linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url("img/fondo.jpg") center/cover;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 80px;
+}
+
+nav ul{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+.hero-contenido{
+    height:80vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero-contenido h1{
+    font-size:4rem;
+    max-width:900px;
+}
+
+.hero-contenido p{
+    margin-top:20px;
+    font-size:1.2rem;
+}
+
+.btn{
+    margin-top:30px;
+    padding:15px 35px;
+    background:#8a6742;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#6d5033;
+}
+
+/* SECCIONES CON IMAGEN Y TEXTO */
+
+.museo,
+.detalle{
+    display:flex;
+    align-items:center;
+    gap:60px;
+}
+
+.imagen,
+.texto{
+    flex:1;
+}
+
+.imagen img{
+    width:100%;
+    border-radius:20px;
+}
+
+.texto p{
+    line-height:1.7;
+    margin-bottom:20px;
+}
+
+/* TIMELINE - COMISION - CARDS HISTORIA */
+
+.linea,
+.cards,
+.cards-historia{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.evento,
+.card,
+.cards-historia .card{
+    background:white;
+    border-radius:20px;
+    transition:.3s;
+}
+
+.card:hover,
+.cards-historia .card:hover{
+    transform:translateY(-10px);
+}
+
+.evento{
+    width:250px;
+    padding:30px;
+}
+
+.card{
+    width:260px;
+    padding:30px;
+    text-align:center;
+}
+
+.cards-historia .card{
+    width:300px;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+}
+
+.cards-historia img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.cards-historia h3{
+    padding:20px;
+    text-align:center;
+}
+
+#clodomiro p,
+#iglesia p{
+    text-align:justify;
+}
+/* FONDOS */
+
+.timeline,
+.historia{
+    background:#e8dfd1;
+    text-align:center;
+}
+
+/* GALERIA */
+
+.imagenes{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    margin-bottom:30px;
+}
+
+.imagenes img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    border-radius:20px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#2c2c2c;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+.logo-footer{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:12px;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+
+    section{
+        padding:60px 6%;
+    }
+
+    nav{
+        flex-direction:column;
+        gap:20px;
+        padding:20px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero-contenido h1{
+        font-size:2.3rem;
+    }
+
+    .hero-contenido p{
+        font-size:1rem;
+    }
+
+    h2{
+        font-size:2rem;
+    }
+
+    .museo,
+    .detalle{
+        flex-direction:column;
+        gap:30px;
+    }
+
+    .imagen img{
+        max-width:500px;
+        display:block;
+        margin:auto;
+    }
+
+    .texto{
+        text-align:center;
+    }
+       .hero{
+        min-height:100vh;
+        height:auto;
+    }
+
+    .hero-contenido{
+        height:auto;
+        min-height:80vh;
+        padding:80px 20px;
+    }
+
+}
